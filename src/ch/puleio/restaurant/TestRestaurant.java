@@ -45,10 +45,30 @@ import java.util.Scanner;
 
 public class TestRestaurant 
 {
-
 	public static void main(String[] args) 
 	{
-		Gestion g = new Gestion();
+		Scanner scan = new Scanner(System.in);
+		int answer;
+		
+		System.out.println("Thank you for choosing our restaurant management program.");
+		System.out.println("For begining press 1, for exiting press 0, any other pressed key will make the program exiting");
+		
+		answer = scan.nextInt();
+		
+		if(answer == 1)
+		{
+			Gestion g = new Gestion();
+		}
+		
+		if(answer == 0)
+		{
+			System.exit(0);
+		}
+		
+		else
+		{
+			System.exit(0);
+		}
 	
 	}
 

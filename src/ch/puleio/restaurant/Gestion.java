@@ -6,11 +6,40 @@ public class Gestion
 {
 	Scanner scan = new Scanner(System.in);
 	private Table table;
+	private int choice;
 
 	public Gestion()
 	{
 		Restaurant r = new Restaurant();
 		Table gestion[] = r.restaurantCreate();
+
+		
+		do
+		{
+			System.out.println("If you want to sit down press 1, to leave press 2, to display the restaurant state press 3,to close the programm press 4");
+			choice = scan.nextInt();
+			
+			switch(choice)
+			{
+			case 1:
+				sitDown(gestion, r);
+				break;
+				
+			case 2:
+				leave(gestion, r);
+				break;
+				
+			case 3:
+				display(gestion, r);
+				
+			case 4:
+				System.out.println("Programm is shutting donw!");
+				System.exit(0);
+				break;
+			}
+			
+		}while(choice != 4);
+		
 		display(gestion, r);
 		sitDown(gestion, r);
 		leave(gestion, r);
