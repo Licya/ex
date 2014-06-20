@@ -13,7 +13,7 @@ package ch.puleio.guessMyNumber;
  * the number to be guessed by selecting randomly an integer in the range 1 to 1000. The
  * application then displays the following text: 
  * 
- * 	I have a number between 1 and 1000. Can you guess my number?
+ * 	I have a number between 1 and 100. Can you guess my number?
  *	Please enter your first guess. 
  *
  *The use is entering an integer using the keyboard and the program displays 

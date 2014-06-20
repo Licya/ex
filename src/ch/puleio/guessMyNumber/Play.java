@@ -17,8 +17,8 @@ public class Play
 	public int choose()
 	{
 		int choosedNumber;
-		choosedNumber = (int)(Math.random()*(1000))+ 1;
-		System.out.println(" choosedNumber = "+choosedNumber);
+		choosedNumber = (int)(Math.random()*(100))+ 1;
+		//System.out.println(" choosedNumber = "+choosedNumber);
 		return choosedNumber;		
 	}
 
@@ -30,7 +30,7 @@ public class Play
 		int number;//the generated number
 		int guess;//the number pressed by the player
 
-		System.out.println("I have a number between 1 and 1000. Can you guess my number?");
+		System.out.println("I have a number between 1 and 100. Can you guess my number?");
 		System.out.println("By choosing 0, you can quit the play");
 		number = choose();
 
@@ -67,8 +67,8 @@ public class Play
 		}
 		//After 3 tries the system exits.
 		System.out.println("Sorry, you're game over!!!");
+		System.out.println("The number to guess was : "+ number);
 		System.exit(0);
 	}
-
 }
 
